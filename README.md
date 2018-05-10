@@ -1,2 +1,2 @@
 # specs
-My spec files to create rpm packages
+spec files to create rpm packages
