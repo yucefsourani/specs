@@ -6,7 +6,7 @@ Summary:        A Wordlist Generator
 License:        GPLv2
 Group:          System Environment/Base
 URL:            https://sourceforge.net/projects/crunch-wordlist/
-Source0:        http://downloads.sourceforge.net/project/crunch-wordlist/crunch-wordlist/%{name}-%{version}.tgz
+Source0:        https://downloads.sourceforge.net/project/crunch-wordlist/crunch-wordlist/%{name}-%{version}.tgz
 BuildRequires:  gcc
 BuildRequires:  make
 BuildRequires:  glibc-devel.i686
@@ -45,6 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep  20 2026 yucefsourani <youssef.m.sourani@gmail.com> 36-2
+- Fix Source0 URL to use https for Copr compatibility
 - Fix 32-bit cross-compilation on x86_64 buildroot
 - Add gcc to BuildRequires
 - Add libatomic.i686 to BuildRequires
