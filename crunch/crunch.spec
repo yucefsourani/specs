@@ -8,6 +8,7 @@ Group:          System Environment/Base
 URL:            https://sourceforge.net/projects/crunch-wordlist/
 Source0:        http://downloads.sourceforge.net/project/crunch-wordlist/crunch-wordlist/%{name}-%{version}.tgz
 BuildRequires:  glibc-devel(x86-32)
+BuildRequires:  libatomic(x86-32)
 BuildRequires:  make
 
 
