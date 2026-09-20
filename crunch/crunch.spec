@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 Name:           crunch
 Version:        3.6
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A Wordlist Generator
 License:        GPLv2
 Group:          System Environment/Base
@@ -40,5 +40,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sun Sep  20 2026 yucefsourani <youssef.m.sourani@gmail.com> 36-2
+- Release 2 add BuildRequires:  libatomic(x86-32)
+
 * Tue May  1 2018 yucefsourani <youssef.m.sourani@gmail.com> 36-1
 - Initial for fedora 28
