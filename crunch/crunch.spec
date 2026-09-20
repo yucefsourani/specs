@@ -9,8 +9,8 @@ URL:            https://sourceforge.net/projects/crunch-wordlist/
 Source0:        https://downloads.sourceforge.net/project/crunch-wordlist/crunch-wordlist/%{name}-%{version}.tgz
 BuildRequires:  gcc
 BuildRequires:  make
-BuildRequires:  glibc-devel.i686
-BuildRequires:  libatomic.i686
+BuildRequires:  glibc-devel(x86-32)
+BuildRequires:  libatomic(x86-32)
 
 
 
@@ -48,8 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 - Fix Source0 URL to use https for Copr compatibility
 - Fix 32-bit cross-compilation on x86_64 buildroot
 - Add gcc to BuildRequires
-- Add libatomic.i686 to BuildRequires
-- Replace glibc-devel(x86-32) with glibc-devel.i686
+- Add libatomic(x86-32) to BuildRequires
+
 
 * Tue May  1 2018 yucefsourani <youssef.m.sourani@gmail.com> 36-1
 - Initial for fedora 28
